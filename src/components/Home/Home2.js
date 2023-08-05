@@ -21,7 +21,7 @@ function Home2() {
               I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
               <br />
-              <br />I am fluent in classics like
+              <br />I am fluent in languages like
               <i>
                 <b className="purple"> Python and Javscript</b>
               </i>
@@ -38,7 +38,7 @@ function Home2() {
               <br />
               <br />
               Whenever possible, I also apply my passion for developing products
-              with with latest technologies and and strive to create innovative solutions that address real-world challenges and enhance user experiences.
+              with latest technologies and and strive to create innovative solutions that address real-world challenges and enhance user experiences.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
