@@ -62,6 +62,7 @@
     .eright-container img{
         left: -25px;
     }
+
     .timeline::after{
         content:'';
         position:absolute;
@@ -117,16 +118,14 @@
 
 
 @media screen and (max-width:600px){
-        .timeline{
-            margin:50px auto;
-        }
+       
         .timeline::after{
-            left:31px;
+            left: 31px;
         }
         .econtainer{
-            width:100%;
-            padding-left:80px;
-            padding-right:25px;
+            width: 100%;
+            /* padding-left:80px;
+            padding-right:25px; */
         }
         .text-box{
             font-size:13px;
@@ -135,10 +134,15 @@
             margin-bottom:10px;
         }
         .eright-container{
+            flex-direction: row-reverse;
             left:0;
         }
-        .eleft-container img, .right-container img{
-            left:10;
+
+        /* .econtainer img:not(.img){
+            left: 13px;
+        } */
+        .eleft-container img, .eright-container img{
+            left: 10px;
         }
         .left-container-arrow,.right-container-arrow{
             border-right:15px solid #fff;
