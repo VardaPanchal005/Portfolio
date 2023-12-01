@@ -23,14 +23,36 @@
     }
     
     .econtainer:nth-child(1){
-        animation-delay:1s;
+        animation-delay:0.2s;
     }
     .econtainer:nth-child(2){
-        animation-delay:2.5s;
+        animation-delay:1.5s;
     }
     .econtainer:nth-child(3){
+        animation-delay:3s;
+    }
+    .econtainer:nth-child(4){
         animation-delay:4s;
     }
+    .econtainer:nth-child(5){
+        animation-delay:5s;
+    }
+.timeline {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    height: 135vh; 
+  }
+  
+  .econtainer {
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .econtainer.hidden {
+    opacity: 0;
+  }
+  
     .text-box{
         padding:20px 30px;
         background: rgba(72, 5, 85, 0);
