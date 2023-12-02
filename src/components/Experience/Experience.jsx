@@ -75,7 +75,7 @@ const Experience = () => {
           <img src="ignition.png" alt=""/>
           <div className="text-box">
             <h2>Backend Developer</h2>
-            <h5>EDC cell Parul University</h5>
+            <h5>Ignition Nest Labs</h5>
             <font color="gray"><small><b>December 2023</b></small></font>
             <p align="left"> I work on the backend of web applications for startups, handling server-side tasks, collaborating with teams, and adapting to the dynamic startup environment. It's a valuable experience, providing practical insights into the world of emerging businesses.</p>
             <span className="right-container-arrow" ></span> 
