@@ -7,7 +7,6 @@ import {
   DiPython,
   DiJava,
   DiGit,
-  DiPhp,
   DiHtml5,
   DiCss3,
   DiDjango
@@ -36,9 +35,6 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJava/>
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-        <DiPhp/>
         </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMysql />
