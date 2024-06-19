@@ -65,7 +65,7 @@ const Experience = () => {
           <div className="text-box">
             <h2>Microsoft Student Ambassador</h2>
             <h5>Microsoft</h5>
-            <font color="gray"><small><b>November 2023</b></small></font>
+            <font color="gray"><small><b>November 2023-April 2024</b></small></font>
             <p align="left">As a MLSA, I connect my peers to the diverse resources offered by Microsoft products. Through campus event, I aim to motivate fellow students to explore innovative learning opportunities. My role is to foster a collaborative community and promote the use of Microsoft tools in education.</p>
             <span className="left-container-arrow" ></span> 
           </div>
