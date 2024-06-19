@@ -88,7 +88,7 @@ const Experience = () => {
             <h5>Sahayata24X7</h5>
             <font color="gray"><small><b>April 2024-June-2024</b></small></font>
             <p align="left"> 
-            At Sahayata 24X7, I worked as a Full Stack Developer, building a comprehensive web application. I utilized React.js for the front-end to develop dynamic  and created APIs with Django REST framework on the back-end. My contributions ensured seamless data integration and communication, resulting in a scalable and efficient application.</p>
+             I worked as a Full Stack Developer, building a comprehensive web application. I utilized React.js for the front-end to develop dynamic  and created APIs with Django REST framework on the back-end. My contributions ensured seamless data integration and communication, resulting in a scalable and efficient application.</p>
             <span className="left-container-arrow" ></span> 
           </div>
         </div>
