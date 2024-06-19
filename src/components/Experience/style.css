@@ -37,6 +37,9 @@
     .econtainer:nth-child(5){
         animation-delay:5s;
     }
+    .econtainer:nth-child(5){
+        animation-delay:6s;
+    }
 .timeline {
     display: flex;
     flex-direction: column;

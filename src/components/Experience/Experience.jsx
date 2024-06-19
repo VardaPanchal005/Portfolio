@@ -61,7 +61,7 @@ const Experience = () => {
         </div>
 
         <div className="econtainer eleft-container">
-          <img src="Microsoft.png" alt="" width="100" height="53" />
+          <img src="Microsoft.png" alt="" width="200" height="50" />
           <div className="text-box">
             <h2>Microsoft Student Ambassador</h2>
             <h5>Microsoft</h5>
@@ -76,9 +76,20 @@ const Experience = () => {
           <div className="text-box">
             <h2>Backend Developer</h2>
             <h5>Ignition Nest Labs</h5>
-            <font color="gray"><small><b>December 2023</b></small></font>
-            <p align="left"> I work on the backend of web applications for startups, handling server-side tasks, collaborating with teams, and adapting to the dynamic startup environment. It's a valuable experience, providing practical insights into the world of emerging businesses.</p>
+            <font color="gray"><small><b>December 2023-April 2024</b></small></font>
+            <p align="left"> I worked on the backend of web applications for startups, handling server-side tasks, collaborating with teams, and adapting to the dynamic startup environment. It's a valuable experience, providing practical insights into the world of emerging businesses.</p>
             <span className="right-container-arrow" ></span> 
+          </div>
+        </div>
+        <div className="econtainer eleft-container">
+          <img src="sahayata.jpg" alt=""/>
+          <div className="text-box">
+            <h2>Full Stack Developer</h2>
+            <h5>Sahayata24X7</h5>
+            <font color="gray"><small><b>April 2024-June-2024</b></small></font>
+            <p align="left"> 
+            At Sahayata 24X7, I worked as a Full Stack Developer, building a comprehensive web application. I utilized React.js for the front-end to develop dynamic  and created APIs with Django REST framework on the back-end. My contributions ensured seamless data integration and communication, resulting in a scalable and efficient application.</p>
+            <span className="left-container-arrow" ></span> 
           </div>
         </div>
       </div>   
