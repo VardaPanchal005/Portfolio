@@ -8,6 +8,7 @@ function Type() {
         strings: [
           "Django Developer",
           "Open Source Contributor",
+          "Full-stack Developer",
         ],
         autoStart: true,
         loop: true,
