@@ -7,7 +7,7 @@ import travel from "../../Assets/Projects/travel.png";
 import Craftwork from "../../Assets/Projects/Craftwork.png";
 import Sorting from "../../Assets/Projects/Sorting Visualizer.png";
 import Pathfinding from "../../Assets/Projects/Pathfinding.png";
-import WindBits from "../../Assets/Projects/WindBits.png";
+import NebulaThread from "../../Assets/Projects/NebulaThread.png";
 
 function Projects() {
   return (
@@ -23,6 +23,16 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={NebulaThread}
+              isBlog={false}
+              title="NebulaThread" 
+              description="Built a full-stack SaaS platform using Next.js that enables users to create, schedule, and automate AI-powered web scraping workflows. The application features an intuitive UI for defining scraping rules, integrates serverless functions to handle dynamic data extraction, and leverages AI for content parsing and pattern recognition."
+              ghLink="hhttps://github.com/VardaPanchal005/nextjsproject"
+              demoLink="https://nebulathread.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={Todo} 
               isBlog={false}
               title="QuickTick"
@@ -31,7 +41,6 @@ function Projects() {
               
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={travel}
@@ -77,16 +86,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={WindBits}
-              isBlog={false}
-              title="WindBits" 
-              description="Whenever you search,it not only shows the Temprature,Windspeed and Humidity but also displays images of that city in the background"
-              ghLink="https://github.com/VardaPanchal005/WindBits"
-              demoLink="https://vardapanchal005.github.io/WindBits/"
-            />
-          </Col>
+          
         </Row>
       </Container>
     </Container>

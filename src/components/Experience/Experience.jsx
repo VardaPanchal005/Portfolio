@@ -1,98 +1,105 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Particle from "../Particle";
 import { Container } from 'react-bootstrap';
-import '../Experience/style.css';
+import '../Experience/style.css'; 
 
 const Experience = () => {
-    const timelineRef = useRef(null);
-  
-    useEffect(() => {
-      const intervalId = setInterval(() => {
-        if (timelineRef.current) {
-          const nextCard = timelineRef.current.querySelector('.econtainer:not(.hidden)');
-          if (nextCard) {
-            nextCard.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start',
-            });
-            nextCard.classList.add('hidden');
-          }
+  const timelineRef = useRef(null);
+  const [visibleItems, setVisibleItems] = useState([]);
+  const maxItems = 7; 
+
+  useEffect(() => {
+    const revealInterval = setInterval(() => {
+      setVisibleItems(prevVisible => {
+        if (prevVisible.length >= maxItems) {
+          clearInterval(revealInterval);
+          return prevVisible;
         }
-      }, 2300);
-  
-      return () => clearInterval(intervalId);
-    }, []);
+        return [...prevVisible, prevVisible.length];
+      });
+    }, 1800); 
+
+    return () => clearInterval(revealInterval);
+  }, []);
+
+  const timelineProgress = (visibleItems.length / maxItems) * 100;
 
   return (
     <Container fluid className='experience-section'>
       <Particle />
-      <div className="timeline" ref={timelineRef}>
-        <div className="econtainer eright-container">
-          <img src="girlscript.png" />
+      <div className="timeline" ref={timelineRef} style={{ '--progress': `${timelineProgress}%` }}>
+
+        <div className={`econtainer eright-container ${visibleItems.includes(0) ? 'visible' : ''}`} style={{ '--y-offset': '10px' }}>
+          <img src="girlscript.png" alt="GirlScript logo" />
           <div className="text-box">
             <h2>Open Source Contributor</h2>
             <h5>GirlScript Summer Of Code</h5>
-            <font color="gray"><small><b>May 2023-August 2023</b></small></font>
-            <p align="left">Participating in GirlScript Summer of Code as an open-source contributor was an enriching journey, allowing me to collaborate talented community while honing my coding skills and making a meaningful impact on real-world projects.</p>
-            <span className="right-container-arrow" ></span>        
+            <font color="gray"><small><b>May-Aug 2023</b></small></font>
+            <p>Participated in a three-month coding program. Worked on real-world projects and gained practical development experience.</p>
           </div>
         </div>
 
-        <div className="econtainer eleft-container">
-          <img src="social.png"/>
+        <div className={`econtainer eleft-container ${visibleItems.includes(1) ? 'visible' : ''}`} style={{ '--y-offset': '-50px' }}>
+          <img src="social.png" alt="Social Summer logo" />
           <div className="text-box">
             <h2>Open Source Contributor</h2>
             <h5>Social Summer Of Code</h5>
-            <font color="gray"><small><b>June 2023-July 2023</b></small></font>
-            <p align="left">As an open-source contributor participating in the Social Summer of Code, I had the incredible experience of collaborating with a diverse and passionate people, making meaningful contributions to projects.</p>
-            <span className="left-container-arrow" ></span>
+            <font color="gray"><small><b>Jun-Jul 2023</b></small></font>
+            <p>Contributed to open source projects in a collaborative environment. Fixed bugs and implemented new features in various repositories.</p>
           </div>
         </div>
 
-        <div className="econtainer eright-container">
-          <img src="infolabz.png" alt=""/>
+        <div className={`econtainer eright-container ${visibleItems.includes(2) ? 'visible' : ''}`} style={{ '--y-offset': '10px' }}>
+          <img src="infolabz.png" alt="Infolabz logo" />
           <div className="text-box">
             <h2>Django Developer</h2>
             <h5>Infolabz</h5>
-            <font color="gray"><small><b>July 2023-August 2023</b></small></font>
-            <p align="left">As a Django developer at Infolabz, I had the opportunity to build dynamic web applications, tackling challenging tasks, and constantly learning from experienced colleagues, making my experience both rewarding and professionally enriching</p>
-            <span className="right-container-arrow" ></span>
+            <font color="gray"><small><b>Jul-Aug 2023</b></small></font>
+            <p>Created dynamic web applications using Django framework. Implemented database models, views, and template systems for various client projects.</p>
           </div>
         </div>
 
-        <div className="econtainer eleft-container">
-          <img src="Microsoft.png" alt="" width="200" height="50" />
+        <div className={`econtainer eleft-container ${visibleItems.includes(3) ? 'visible' : ''}`} style={{ '--y-offset': '-50px' }}>
+          <img src="Microsoft.png" alt="Microsoft logo" />
           <div className="text-box">
             <h2>Microsoft Student Ambassador</h2>
             <h5>Microsoft</h5>
-            <font color="gray"><small><b>November 2023-April 2024</b></small></font>
-            <p align="left">As a MLSA, I connect my peers to the diverse resources offered by Microsoft products. Through campus event, I aim to motivate fellow students to explore innovative learning opportunities. My role is to foster a collaborative community and promote the use of Microsoft tools in education.</p>
-            <span className="left-container-arrow" ></span> 
+            <font color="gray"><small><b>Nov 2023-Apr 2024</b></small></font>
+            <p>Organized technical workshops and events on campus. Promoted Microsoft technologies and developer tools to fellow students.</p>
           </div>
         </div>
 
-        <div className="econtainer eright-container">
-          <img src="ignition.png" alt=""/>
+        <div className={`econtainer eright-container ${visibleItems.includes(4) ? 'visible' : ''}`} style={{ '--y-offset': '10px' }}>
+          <img src="ignition.png" alt="Ignition logo" />
           <div className="text-box">
             <h2>Backend Developer</h2>
             <h5>Ignition Nest Labs</h5>
-            <font color="gray"><small><b>December 2023-April 2024</b></small></font>
-            <p align="left"> I worked on the backend of web applications for startups, handling server-side tasks, collaborating with teams, and adapting to the dynamic startup environment. It's a valuable experience, providing practical insights into the world of emerging businesses.</p>
-            <span className="right-container-arrow" ></span> 
+            <font color="gray"><small><b>Dec 2023-Apr 2024</b></small></font>
+            <p>Developed backend infrastructure for an early-stage startup. Created APIs, database models, and authentication systems.</p>
           </div>
         </div>
-        <div className="econtainer eleft-container">
-          <img src="sahayata.jpg" alt=""/>
+
+        <div className={`econtainer eleft-container ${visibleItems.includes(5) ? 'visible' : ''}`} style={{ '--y-offset': '-50px' }}>
+          <img src="sahayata.jpg" alt="Sahayata logo" />
           <div className="text-box">
             <h2>Full Stack Developer</h2>
             <h5>Sahayata24X7</h5>
-            <font color="gray"><small><b>April 2024-June-2024</b></small></font>
-            <p align="left"> 
-             I worked as a Full Stack Developer, building a comprehensive web application. I utilized React.js for the front-end to develop dynamic  and created APIs with Django REST framework on the back-end. My contributions ensured seamless data integration and communication, resulting in a scalable and efficient application.</p>
-            <span className="left-container-arrow" ></span> 
+            <font color="gray"><small><b>Apr-Jun 2024</b></small></font>
+            <p>Built responsive applications using React for frontend and Django REST framework for backend. Implemented user authentication and data visualization.</p>
           </div>
         </div>
-      </div>   
+
+        <div className={`econtainer eright-container ${visibleItems.includes(6) ? 'visible' : ''}`} style={{ '--y-offset': '10px' }}>
+          <img src="quickwork.png" alt="Quickwork logo" />
+          <div className="text-box">
+            <h2>Associate Software Engineer</h2>
+            <h5>Quickwork</h5>
+            <font color="gray"><small><b>Aug 2024</b></small></font>
+            <p>Developing automation solutions and MERN stack applications with AWS integration. Working on enterprise-level projects.</p>
+          </div>
+        </div>
+
+      </div>
     </Container>
   );
 }
