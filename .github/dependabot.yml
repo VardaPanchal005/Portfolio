@@ -1,0 +1,9 @@
+
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/" # Location of your package.json and package-lock.json
+    schedule:
+      interval: "weekly" # Options: daily, weekly, monthly
+    open-pull-requests-limit: 10
+    rebase-strategy: auto
