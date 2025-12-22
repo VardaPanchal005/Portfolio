@@ -24,7 +24,7 @@
     "react-tsparticles": "^1.42.2",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4",
-    "webpack": "^4.19.1"
+    "webpack": "^5.104.1"
   },
   "scripts": {
     "start": "react-scripts start",
