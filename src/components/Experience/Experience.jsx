@@ -92,7 +92,7 @@ const Experience = () => {
         <div className={`econtainer eright-container ${visibleItems.includes(6) ? 'visible' : ''}`} style={{ '--y-offset': '10px' }}>
           <img src="quickwork.png" alt="Quickwork logo" />
           <div className="text-box">
-            <h2>Associate Software Engineer</h2>
+            <h2>Software Engineer</h2>
             <h5>Quickwork</h5>
             <font color="gray"><small><b>Aug 2024-Jul 2026</b></small></font>
             <p>Built and automated enterprise workflows using the MEAN stack, with AWS-integrated deployments serving international clients and banks, like Axis Bank, DMI, IBL etc.</p>
