@@ -84,7 +84,7 @@ const Experience = () => {
           <div className="text-box">
             <h2>Full Stack Developer</h2>
             <h5>Sahayata24X7</h5>
-            <font color="gray"><small><b>Apr-Jun 2024</b></small></font>
+            <font color="gray"><small><b>Apr 2024-Jun 2024</b></small></font>
             <p>Built responsive applications using React for frontend and Django REST framework for backend. Implemented user authentication and data visualization.</p>
           </div>
         </div>
@@ -94,8 +94,8 @@ const Experience = () => {
           <div className="text-box">
             <h2>Associate Software Engineer</h2>
             <h5>Quickwork</h5>
-            <font color="gray"><small><b>Aug 2024</b></small></font>
-            <p>Developing automation solutions and MERN stack applications with AWS integration. Working on enterprise-level projects.</p>
+            <font color="gray"><small><b>Aug 2024-Jul 2026</b></small></font>
+            <p>Built and automated enterprise workflows using the MEAN stack, with AWS-integrated deployments serving international clients and banks, like Axis Bank, DMI, IBL etc.</p>
           </div>
         </div>
 
