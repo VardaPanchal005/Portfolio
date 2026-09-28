@@ -22,23 +22,22 @@ function Home2() {
               <br />
               <br />I am fluent in languages like
               <i>
-                <b className="purple">Java, Python and JavaScript</b>
+                <b className="purple"> Java, Python and JavaScript</b>
               </i>
               <br />
               <br />
               My field of Interest's are building expertise in&nbsp;
               <i>
                 <b className="purple">Cloud Infrastructure and DevOps</b>,{" "}
-                <b className="purple">Backend Systems and API Design</b>,
+                <b className="purple">Backend Systems</b>,
                 along with strengthening my problem-solving skills through{" "}
                 <b className="purple">
-                  Data Structures and Algorithms.
+                  DSA.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with latest technologies and and strive to create innovative solutions that address real-world challenges and enhance user experiences.
+             I love turning ideas into reality through technology, exploring new tools, solving meaningful problems, and building experiences that are both practical and impactful.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
