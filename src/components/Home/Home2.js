@@ -22,16 +22,17 @@ function Home2() {
               <br />
               <br />I am fluent in languages like
               <i>
-                <b className="purple"> Python and Javscript</b>
+                <b className="purple">Java, Python and JavaScript</b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My field of Interest's are building expertise in&nbsp;
               <i>
-                <b className="purple">Web Technologies </b> and
-                also in areas related to{" "}
+                <b className="purple">Cloud Infrastructure and DevOps</b>,{" "}
+                <b className="purple">Backend Systems and API Design</b>,
+                along with strengthening my problem-solving skills through{" "}
                 <b className="purple">
-                 Machine Leaning.
+                  Data Structures and Algorithms.
                 </b>
               </i>
               <br />
